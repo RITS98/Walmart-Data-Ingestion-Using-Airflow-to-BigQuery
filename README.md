@@ -5,7 +5,7 @@ all automatically using managed Apache Airflow.
 
 ## Architecture
 
-![deepseek_mermaid_20250706_b2a613](https://github.com/user-attachments/assets/09d67614-75e4-4523-bb81-0590992d3a64)
+
 
 ```mermaid
 flowchart LR;
