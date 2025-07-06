@@ -5,8 +5,6 @@ all automatically using managed Apache Airflow.
 
 ## Architecture
 
-
-
 ```mermaid
 flowchart LR;
     A[GCP Buckets<br>walmart_data/] --> B[Airflow DAG<br>GCP Cloud Composer];
@@ -21,6 +19,54 @@ flowchart LR;
     style C3 fill:#d3f9d8,stroke:#2f8132,stroke-width:2px,color:black;
 ```
 
+Here’s a clean, **README-friendly** version with proper formatting for your project:  
+
+---
+
+# **GCP Services Overview**  
+This project leverages the following Google Cloud Platform (GCP) services:  
+
+### **GCP Cloud Storage Buckets**  
+**Purpose**: Scalable object storage for files (raw/processed data, backups, etc.).  
+**Key Features**:  
+✔ **Fully managed** with multi-regional/regional storage tiers.  
+✔ Fine-grained access control (IAM, ACLs).  
+✔ Seamless integration with BigQuery, Composer, and other GCP tools.  
+**Example Use Case**:  
+- Store ingested raw data (CSV/JSON) before processing.  
+- Archive processed outputs.  
+
+### **GCP Cloud Composer (Managed Apache Airflow)**  
+**Purpose**: Orchestrate and automate workflows.  
+**Key Features**:  
+✔ **Serverless Airflow** with auto-scaling.  
+✔ Python-based DAGs for workflow definitions.  
+✔ Native integration with GCP services (BigQuery, GCS, Pub/Sub).  
+**Example Use Case**:  
+- Schedule ETL jobs to transform and load data into BigQuery.  
+- Monitor pipeline health via Airflow’s UI.  
+
+### **GCP BigQuery**  
+**Purpose**: Serverless data warehouse for analytics.  
+**Key Features**:  
+✔ **Petabyte-scale SQL queries** with fast execution.  
+✔ Built-in ML (BigQuery ML) and geospatial analysis.  
+✔ Pay-as-you-go pricing (storage + compute).  
+**Example Use Case**:  
+- Analyze processed data with SQL.  
+- Train ML models directly in BigQuery.  
+
+
+
+### **🛠️ How They Integrate**  
+1. **GCS Buckets** → Store raw data.  
+2. **Composer** → Orchestrates data pipelines (e.g., clean/transform data).  
+3. **BigQuery** → Analyze results or serve dashboards.  
+
+### **📌 Notes**  
+- Ensure IAM permissions are configured for cross-service access.  
+- Costs vary by usage (e.g., BigQuery query volume, GCS storage class).  
+
 
 ## Data Flow Description
 
@@ -33,6 +79,18 @@ flowchart LR;
    - `merchants_data`
    - `sales_data`
    - `target_data`
+  
+## Directory structure
+
+rits98-walmart-data-ingestion-using-airflow-to-bigquery/
+    ├── README.md
+    ├── airflow_gcp_bigquery_dag.py
+    └── data/
+        ├── merchants_1.json
+        ├── merchants_2.json
+        ├── walmart_sales_1.json
+        └── walmart_sales_2.json
+
 
 
 ## Steps
