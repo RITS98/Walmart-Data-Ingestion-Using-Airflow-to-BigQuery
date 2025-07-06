@@ -7,7 +7,8 @@ all automatically using managed Apache Airflow.
 
 ![deepseek_mermaid_20250706_b2a613](https://github.com/user-attachments/assets/09d67614-75e4-4523-bb81-0590992d3a64)
 
-flowchart LR
+```mermaid
+flowchart LR;
     A[GCP Buckets<br>walmart_data/] --> B[Airflow DAG<br>GCP Cloud Composer];
     B --> C1[BigQuery Table<br>walmart_dwh.merchants_data];
     B --> C2[BigQuery Table<br>walmart_dwh.sales_data];
@@ -18,6 +19,7 @@ flowchart LR
     style C1 fill:#fffbe6,stroke:#c59c00,stroke-width:1px;
     style C2 fill:#fffbe6,stroke:#c59c00,stroke-width:1px;
     style C3 fill:#d3f9d8,stroke:#2f8132,stroke-width:2px;
+```
 
 
 ## Data Flow Description
