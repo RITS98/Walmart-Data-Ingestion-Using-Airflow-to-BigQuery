@@ -19,11 +19,6 @@ flowchart LR;
     style C3 fill:#d3f9d8,stroke:#2f8132,stroke-width:2px,color:black;
 ```
 
-Here’s a clean, **README-friendly** version with proper formatting for your project:  
-
----
-
-# **GCP Services Overview**  
 This project leverages the following Google Cloud Platform (GCP) services:  
 
 ### **GCP Cloud Storage Buckets**  
