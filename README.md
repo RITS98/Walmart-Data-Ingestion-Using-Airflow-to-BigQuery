@@ -78,12 +78,12 @@ This project leverages the following Google Cloud Platform (GCP) services:
 ## Directory structure
 
 walmart-data-ingestion-using-airflow-to-bigquery/  
-├── README.md                     # Project documentation  
-├── airflow_gcp_bigquery_dag.py   # Airflow DAG for ETL workflow  
-└── data/                         # Sample input data (JSON)  
-    ├── merchants_1.json          # Merchant metadata  
+1. README.md  -> Project documentation  
+2. airflow_gcp_bigquery_dag.py  -> Airflow DAG for ETL workflow  
+3. data/                             # Sample input data (JSON)  
+    ├── merchants_1.json              # Merchant metadata  
     ├── merchants_2.json  
-    ├── walmart_sales_1.json      # Walmart sales transactions  
+    ├── walmart_sales_1.json          # Walmart sales transactions  
     └── walmart_sales_2.json  
 
 
