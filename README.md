@@ -7,7 +7,7 @@ all automatically using managed Apache Airflow.
 
 ```mermaid flowchart LR A[GCP Buckets<br>walmart_data/] --> B[Airflow DAG<br>GCP Cloud Composer] B --> C1[BigQuery Table<br>walmart_dwh.merchants_data] B --> C2[BigQuery Table<br>walmart_dwh.sales_data] B --> C3[BigQuery Table<br>walmart_dwh.target_data] style A fill:#f7f7f7,stroke:#555,stroke-width:1px style B fill:#e6f7ff,stroke:#2b7a78,stroke-width:1.5px style C1 fill:#fffbe6,stroke:#c59c00,stroke-width:1px style C2 fill:#fffbe6,stroke:#c59c00,stroke-width:1px style C3 fill:#d3f9d8,stroke:#2f8132,stroke-width:2px ```
 
-## 🔄 Data Flow Description
+## Data Flow Description
 
 1. **GCP Buckets**: Raw JSON files are stored under `walmart_data/` directory.
 2. **Airflow (Cloud Composer)**: A daily DAG performs:
