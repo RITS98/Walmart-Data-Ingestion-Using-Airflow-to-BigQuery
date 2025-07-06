@@ -77,14 +77,14 @@ This project leverages the following Google Cloud Platform (GCP) services:
   
 ## Directory structure
 
-rits98-walmart-data-ingestion-using-airflow-to-bigquery/
-    ├── README.md
-    ├── airflow_gcp_bigquery_dag.py
-    └── data/
-        ├── merchants_1.json
-        ├── merchants_2.json
-        ├── walmart_sales_1.json
-        └── walmart_sales_2.json
+rits98-walmart-data-ingestion-using-airflow-to-bigquery/  
+    ├── README.md  
+    ├── airflow_gcp_bigquery_dag.py  
+    └── data/  
+        ├── merchants_1.json  
+        ├── merchants_2.json  
+        ├── walmart_sales_1.json  
+        └── walmart_sales_2.json  
 
 
 
